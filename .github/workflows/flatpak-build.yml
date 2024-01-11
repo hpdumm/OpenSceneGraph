@@ -10,5 +10,7 @@ jobs:
         uses: actions/checkout@v4
       # a build is successful if this finishes without error
       # the intent is not to produce a binary
+      - name: Create the makefiles with Ninja
+        run: cmake -B build -G Ninja
       - name: Build OSG
-        run: cmake . -B build -G Ninja
+        run: cd build/ && ninja
