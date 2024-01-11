@@ -11,4 +11,4 @@ jobs:
       # a build is successful if this finishes without error
       # the intent is not to produce a binary
       - name: Build OSG
-        run: cmake -B build -G Ninja
+        run: cmake . -B build -G Ninja
