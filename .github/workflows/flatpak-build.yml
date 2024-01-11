@@ -6,8 +6,8 @@ jobs:
       image: freedesktopsdk/sdk:22.08
     steps:
       - name: Checkout repository code
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       # a build is successful if this finishes without error
       # the intent is not to produce a binary
       - name: Build OSG
-      - run: cmake -B build -G Ninja
+        run: cmake -B build -G Ninja
