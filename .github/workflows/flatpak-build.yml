@@ -1,4 +1,5 @@
 name: Flatpak build of OpenSceneGraph
+on: [push]
 jobs:
   flatpak-build:
     runs-on: ubuntu-latest
